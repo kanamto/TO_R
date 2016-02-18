@@ -52,7 +52,7 @@ r <- sum(exp(-1*xVec[{1+1}:length(xVec)])/(xVec[1:length(xVec)-1])+10) #Returns 
 
 #7 Using xVec and yVec from #6:
 s <- yVec[yVec > 600] #Returns vector (assigned to s) with all instances of yVec that are greater than 600.
-t <- order(s, decreasing=TRUE) #Using s (above), order function orders variables in decreasing (max to min) and then returns vector (assigned to t) of the index positions (per yVec) of each ordered instance. 
+t <- order(s, decreasing=TRUE) #Using s (above), order function orders values in decreasing (max to min) and then returns vector (assigned to t) of the index positions (per yVec). 
 u <- xVec[t]  #Using vector of index positions corresponding to those numbers >600, u stores a vector of xVec values with those index positions.
 v <- sqrt(abs(xVec-mean(xVec))) #v stores vector of square root of absolute value of expression: xi (corresponding indexed position of xVec) - mean of xVec (scalar)
 w <- length( yVec[yVec >= {sort(yVec, decreasing = TRUE)}[1] -200] ) #Finds length of a the vector where yVec is greater than/equal to (accounts for within 200) the max (found by sorting all numbers in yVec in decreasing order and taking first indexed value) minus 200.
