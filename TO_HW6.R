@@ -1,5 +1,7 @@
 #Homework 6, Nam To
 
+## Prof G: The first two plots are missing?
+
 #Part 1 - Plots
 require(ggplot2) #Requiring packagings that includes methods and attributes to be accessed below.
 require(stats)
